@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,15 +10,25 @@
 </head>
 <body style="background-color: rgb(195, 223, 223);">
 
+    <nav style="margin-left: 1em; max-width:100%; display:inline; ">
+        <ul style="display: inline; list-style-type: none; left: -1em" >
+            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#sk">Soft Skill</a></li>
+            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#hk">Hard Skill</a></li>
+            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#bg">Blog</a></li>
+            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#so">Sobre</a></li>
+        </ul>
+    </nav>
+
     <h1>Alexandre Evangelista Souza Lima</h1>
 
-    <img src="minha_foto.jpg" style="border-radius: 40%;" width="100" alt="foto de Alexandre">
+    <img id="img" src="minha_foto.jpg" style="border-radius: 40%;" width="100" alt="foto de Alexandre">
     <br>
     <br>
 
-    <em><a href="https://cartao-de-visita.netlify.app/" target="_blank" >Click-me</a></em>
-
-    <h2>Habilidade que me orgulham</h2>
+    <p id="so"><em><a style="text-decoration: none;"  href="https://cartao-de-visita.netlify.app/" target="_blank" >Click-me</a></em></p>
+    <hr>
+    
+    <h2 id="sk">Soft Skills</h2>
 
     <ul>
         <li><strong>Persistência</strong></li>
@@ -27,7 +38,7 @@
     
     <hr>
     
-    <h2>Habilidades Diversas</h2>
+    <h2 id="hk">Hard Skills</h2>
 
     <strong>
         <ol>
@@ -36,11 +47,52 @@
             <li><strong>HTML-5</strong></li>
         </ol>
     </strong>
-<br>
-<br>
+    <hr>
+    
+    <p id="bg"><a href="https://www.infoq.com/br/blog-appreciate/" target="_blank" ><em><strong>Blog</strong></em></a></p>
+    
+    <br>
+    <br>
     <footer>
-        <p style="color: rgb(65, 65, 189);"><em>Estudante em Desenvolvimento web da <strong>Trybe</strong></em></p>
+        <p style="color: rgb(65, 65, 189);"><em><a href="#img">Estudante em Desenvolvimento web da <strong>Trybe</strong>.</a></em></p>
     </footer>
     
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
