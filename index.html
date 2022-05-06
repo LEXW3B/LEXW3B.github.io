@@ -7,15 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://emoji.slack-edge.com/TMDDFEPFU/bongo_blob/2df6cb05c2dd2ca6.gif" type="image/x-icon">
     <title>Portifólio</title>
-</head>
-<body style="background-color: rgb(195, 223, 223);">
+    <style>
+        body{
+            background-color: rgb(195, 223, 223);
+        }
+        nav{
+            margin-left: 1em; 
+            max-width:100%; 
+            display:inline;
+        }
+        nav{
+            margin-left: 1em; max-width:100%; display:inline;
+        }
+        #lista{
+            display: inline; list-style-type: none; left: -1em
+        }
+        .sub-lista{
+            display: inline; padding:20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        #img{
+            text-decoration: none;
+        }
 
-    <nav style="margin-left: 1em; max-width:100%; display:inline; ">
-        <ul style="display: inline; list-style-type: none; left: -1em" >
-            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#sk">Soft Skill</a></li>
-            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#hk">Hard Skill</a></li>
-            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#bg">Blog</a></li>
-            <li style="display: inline; padding:20px;"><a style="text-decoration: none;" href="#so">Sobre</a></li>
+        p{
+            color: rgb(65, 65, 189);
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul id="lista">
+            <li class="sub-lista"><a href="#sk">Soft Skill</a></li>
+            <li class="sub-lista"><a href="#hk">Hard Skill</a></li>
+            <li class="sub-lista"><a href="#bg">Blog</a></li>
+            <li class="sub-lista"><a href="#so">Sobre</a></li>
         </ul>
     </nav>
 
@@ -25,7 +56,7 @@
     <br>
     <br>
 
-    <p id="so"><em><a style="text-decoration: none;"  href="https://cartao-de-visita.netlify.app/" target="_blank" >Click-me</a></em></p>
+    <p id="so"><em><a href="https://cartao-de-visita.netlify.app/" target="_blank" >Click-me</a></em></p>
     <hr>
     
     <h2 id="sk">Soft Skills</h2>
@@ -54,7 +85,7 @@
     <br>
     <br>
     <footer>
-        <p style="color: rgb(65, 65, 189);"><em><a href="#img">Estudante em Desenvolvimento web da <strong>Trybe</strong>.</a></em></p>
+        <p><em><a href="#img">Estudante em Desenvolvimento web da <strong>Trybe</strong>.</a></em></p>
     </footer>
     
 <!-- Code injected by live-server -->
