@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(195, 223, 223);
+}
+nav{
+    margin-left: 1em; 
+    max-width:100%; 
+    display:inline;
+}
+nav{
+    margin-left: 1em; max-width:100%; display:inline;
+}
+#lista{
+    display: inline; list-style-type: none; left: -1em
+}
+.sub-lista{
+    display: inline; padding:20px;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li a:hover{
+    color: rgb(75, 70, 70);
+}
+
+#img{
+    text-decoration: none;
+}
+
+p{
+    color: rgb(65, 65, 189);
+}
+
+.per{
+    font-size: 24px;
+}.pac{
+    font-size: 20px;
+}.fo{
+    font-size: 26px;
+}
+#ss{
+    list-style-type: none;
+}
